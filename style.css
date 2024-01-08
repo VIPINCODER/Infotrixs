@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+body {
+    background-image: url(https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    display: flex;
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+#app{
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    box-shadow: 0 0 5px;
+    border-radius: 25px;
+}
+
+#city{
+    background-color: rgb(211, 242, 240);
+    border: none;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+#weather-details {
+    width: 50px;
+    height: 50px;
+}
+
+#show{
+    background-color: rgb(211, 242, 240);
+    border: none;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    #app {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    #weather-details {
+      flex-basis: calc(50% - 20px);
+    }
+}
